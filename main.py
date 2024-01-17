@@ -1,12 +1,12 @@
 import os
 import time
 import streamlit as st
-from st_english_list_files_functions import save_uploaded_file, read_file, delete_all_files, delete_file, rename_file
+from st_english_list_files_functions import save_uploaded_file, read_file, delete_all_files, delete_file, rename_file, ensure_folder_exists
 
 
 # Directory where uploaded files will be stored
-UPLOAD_FOLDER = 'uploaded_files'
-
+UPLOAD_FOLDER = './uploaded_files'
+ensure_folder_exists(UPLOAD_FOLDER)
 
 # Basic login
 def login(username, password):

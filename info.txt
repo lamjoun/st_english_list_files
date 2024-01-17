@@ -34,3 +34,4 @@ git rm -r --cached main_old1.py  __pycache__/ uploaded_files/
 git commit -m "Remove folders: __pycache__ and uploaded_files. Also remove file main_old1.py from repository"
 git push origin main
 
+git commit -m "add .gitignore file and modif test for main.py and maj info.txt"

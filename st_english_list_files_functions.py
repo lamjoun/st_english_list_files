@@ -3,6 +3,11 @@ import PyPDF2
 import shutil
 from docx import Document
 
+
+def ensure_folder_exists(folder):
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+        
 # Function to save uploaded files
 def save_uploaded_file(i_UPLOAD_FOLDER, uploaded_file):
     if not os.path.exists(i_UPLOAD_FOLDER):
