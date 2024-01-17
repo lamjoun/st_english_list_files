@@ -1,0 +1,28 @@
+cd "C:\zz_dev_folder\aaa_env_folder"
+python -m venv st_english_list_files
+source  ./st_english_list_files/Scripts/activate
+cd "C:\zz_dev_folder\st_tools\st_english_list_files"
+clear
+
+===> Create env st_english_list_files
+cd "C:\zz_dev_folder\aaa_env_folder"
+python -m venv st_english_list_files
+
+===> Activate st_english_list_files
+#source  ./st_english_list_files/Scripts/activate st_english_list_files
+#>> deactivate
+#
+cd "C:\zz_dev_folder\aaa_env_folder"
+source  ./st_english_list_files/Scripts/activate
+cd "C:\zz_dev_folder\st_tools\st_english_list_files"
+clear
+
+
+
+===> current folder
+cd "C:\zz_dev_folder\st_tools\st_english_list_files"
+clear
+
+pip install -r requirements.txt
+
+streamlit run main.py
