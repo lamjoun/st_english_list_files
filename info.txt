@@ -26,3 +26,11 @@ clear
 pip install -r requirements.txt
 
 streamlit run main.py
+
+
+====> Git Operations
+# do not consider certains folders and files (remove from repository)
+git rm -r --cached main_old1.py  __pycache__/ uploaded_files/ 
+git commit -m "Remove folders: __pycache__ and uploaded_files. Also remove file main_old1.py from repository"
+git push origin main
+
